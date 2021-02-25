@@ -1,0 +1,27 @@
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+node_modules
+src
+test
+demos
+
+/.editorconfig
+/.eslintignore
+/.eslintrc.js
+/.gitignore
+/.prettierignore
+/.prettierrc
+package-lock.json
+yarn.lock
+/rollup.config.js
