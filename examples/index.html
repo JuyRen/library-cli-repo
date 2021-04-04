@@ -7,13 +7,15 @@
         <title>Document</title>
     </head>
     <body>
+        <!-- <script src="./index.js" type="module"></script> -->
+
         <script src="../lib/index.js"></script>
         <script>
-            const mySelf = new MyBundle({
+            const mySelf = new Test({
                 name: 'yourName',
                 age: 'yourAge'
             });
-
+            console.log('mySelf: ', mySelf);
             mySelf.getInfo();
         </script>
     </body>

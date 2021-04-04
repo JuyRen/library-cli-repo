@@ -3,8 +3,7 @@ class MyDemo {
         this.name = P.name;
         this.age = P.age;
 
-        // @rollup/plugin-replace, preventAssignment
-        // process.env.NODE_ENV = true;
+        // process.env.NODE_ENV = true; // @rollup/plugin-replace, preventAssignment
         console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
     }
 
