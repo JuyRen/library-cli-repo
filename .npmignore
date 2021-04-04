@@ -16,6 +16,7 @@ src
 test
 examples
 
+/.babelrc
 /.editorconfig
 /.eslintignore
 /.eslintrc.js
@@ -24,4 +25,6 @@ examples
 /.prettierrc
 package-lock.json
 yarn.lock
-/rollup.config.js
+/rollup.config.base.js
+/rollup.config.dev.js
+/rollup.config.prod.js
