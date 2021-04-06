@@ -6,13 +6,16 @@ module.exports = {
     },
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint'],
-    extends: ['airbnb-base', 'prettier'],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended'
+    ],
     parserOptions: {
         ecmaVersion: 12,
         sourceType: 'module'
     },
     rules: {
-        'no-unused-vars': ['warn'],
         'import/extensions': 'off',
         'import/prefer-default-export': 'off'
     },

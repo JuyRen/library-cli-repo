@@ -13,6 +13,7 @@
     "scripts": {
         "build": "rimraf lib/* & cross-env NODE_ENV=production rollup --config rollup.config.prod.js & npm run build:dts",
         "build:dts": "rollup --config rollup.config.dts.js",
+        "build:test": "cross-env NODE_ENV=test rollup --config rollup.config.prod.js",
         "dev": "rimraf lib/* & cross-env NODE_ENV=development rollup --config rollup.config.dev.js --watch"
     },
     "devDependencies": {
