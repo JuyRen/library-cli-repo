@@ -1,1 +1,1 @@
-### JavaScript 模板代码
+### Typescript 模板代码
