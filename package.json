@@ -11,7 +11,8 @@
     "main": "./lib/index.js",
     "scripts": {
         "build": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js",
-        "dev": "cross-env NODE_ENV=development rollup --config rollup.config.dev.js --watch"
+        "server": "cross-env NODE_ENV=development rollup --config rollup.config.dev.js --watch",
+        "dev:test": "cross-env NODE_ENV=test rollup --config rollup.config.test.js --watch"
     },
     "devDependencies": {
         "@babel/core": "^7.13.14",
