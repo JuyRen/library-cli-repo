@@ -4,11 +4,13 @@ import babel from '@rollup/plugin-babel'; // rollup 的 babel 插件，ES6转ES5
 import commonjs from '@rollup/plugin-commonjs'; // 将非ES6语法的包转为ES6可用
 import replace from '@rollup/plugin-replace';
 import typescript from '@rollup/plugin-typescript';
+import json from '@rollup/plugin-json';
 
 const config = {
     input: './src/main.ts',
 
     plugins: [
+        json(),
         // @rollup/plugin-node-resolve
         // @rollup/plugin-babel
         // 同时使用时，nodeResolve要在babel之前
