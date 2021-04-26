@@ -13,8 +13,8 @@
     "scripts": {
         "build": "rimraf lib/* & cross-env NODE_ENV=production rollup --config rollup.config.prod.js & npm run build:dts",
         "build:dts": "rollup --config rollup.config.dts.js",
-        "dev:test": "rimraf lib/* & cross-env NODE_ENV=test rollup --config rollup.config.test.js",
-        "server": "rimraf lib/* & cross-env NODE_ENV=development rollup --config rollup.config.dev.js --watch"
+        "node": "rimraf lib/* & cross-env NODE_ENV=test rollup --config rollup.config.node.js",
+        "dev": "rimraf lib/* & cross-env NODE_ENV=development rollup --config rollup.config.dev.js --watch"
     },
     "devDependencies": {
         "@babel/core": "^7.13.14",
@@ -23,6 +23,7 @@
         "@babel/preset-typescript": "^7.13.0",
         "@rollup/plugin-babel": "^5.2.1",
         "@rollup/plugin-commonjs": "^18.0.0",
+        "@rollup/plugin-json": "^4.1.0",
         "@rollup/plugin-node-resolve": "^11.2.1",
         "@rollup/plugin-replace": "^2.4.2",
         "@rollup/plugin-typescript": "^8.2.1",
